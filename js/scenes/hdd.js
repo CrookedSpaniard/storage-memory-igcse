@@ -77,9 +77,9 @@ FD.add({
                 <rect class="hd-arm-x" x="140" y="40" width="150" height="20" rx="3"/>
                 <rect class="hd-head" id="zHead" x="140" y="60" width="44" height="38" rx="4"/>
                 <path class="hd-scratch" id="scratch" d="M60 124l30 8 25-6 30 9 25-7 30 8"/>
-                <circle class="hd-dust" id="dust" cx="-20" cy="108" r="8"/>
+                <circle class="hd-dust" id="dust" cx="-20" cy="108" r="8" opacity="0"/>
                 <rect class="hd-filter" id="filter" x="22" y="70" width="10" height="90" rx="2"/>
-                <text x="80" y="92" class="svg-sm">a few nanometres of gas</text>
+                <text x="70" y="92" class="svg-sm">a few nanometres of gas</text>
                 <text x="80" y="180" class="svg-sm">spinning platter</text>
               </svg>
               <div class="chk-btns"><button class="btn" id="bDust">💨 Let a dust particle in</button><button class="btn" id="bSeal" aria-pressed="false">🛡️ Filter / sealed unit: off</button></div>
@@ -204,6 +204,7 @@ FD.add({
     }
     function resetCrash() {
       $('#dust').setAttribute('cx', -20);
+      $('#dust').setAttribute('opacity', 0);
       $('#zHead').setAttribute('y', 60);
       $('#scratch').classList.remove('on');
       $('#surf').classList.remove('bad');
@@ -213,6 +214,7 @@ FD.add({
     async function dust() {
       resetCrash();
       $('#bDust').disabled = true;
+      $('#dust').setAttribute('opacity', 1);
       const stop = sealed ? 27 : 150;
       await FD.tween(sealed ? 600 : 1300, (k) => $('#dust').setAttribute('cx', -20 + (stop + 20) * k));
       if (sealed) {
