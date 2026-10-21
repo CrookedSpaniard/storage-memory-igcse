@@ -53,7 +53,7 @@ FD.add({
 
         <div data-panel="units" class="sim" hidden>
           <div class="seg" id="uSeg"><span class="seg-l">Count in</span><button data-v="1000">1000s (book: KB, MB…)</button><button data-v="1024">1024s (specification: KiB, MiB…)</button></div>
-          <div class="two-col">
+          <div class="two-col tbl-two">
             <div class="sim-box"><table class="tbl cp-u"><thead><tr><th>Number of bytes</th><th>Symbol</th><th>Name</th></tr></thead><tbody id="uBody"></tbody></table>
               <p class="note" id="uNote"></p></div>
             <div class="sim-box">

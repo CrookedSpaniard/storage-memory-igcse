@@ -50,7 +50,7 @@ FD.add({
         </div>
 
         <div data-panel="hz" class="sim" hidden>
-          <div class="two-col">
+          <div class="two-col tbl-two">
             <div class="sim-box">
               <label class="rng"><span>Clock speed <output id="ghzO"></output></span><input type="range" id="ghz" min="0.5" max="5" step="0.1" value="3.2"></label>
               <p class="cu-big" id="cps"></p>

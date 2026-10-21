@@ -50,13 +50,13 @@ FD.add({
                 <path class="dv-body" d="M180 132h210l-18 46H198z"/>
                 <rect class="sto-mb" x="220" y="140" width="130" height="30" rx="3"/>
                 <rect class="sto-chip" x="290" y="146" width="48" height="18" rx="2"/><text x="314" y="159" class="svg-sm sto-w">SSD</text>
-                <text x="250" y="160" class="svg-sm sto-w">motherboard</text>
+                <text x="254" y="159" class="svg-sm sto-w" style="font-size: 9px">motherboard</text>
               </g>
               <g class="sk" data-k="ext" data-n="1"><path class="wire" d="M180 150H130"/><rect class="sto-usb" x="92" y="140" width="40" height="20" rx="3"/><rect class="dv-detail" x="130" y="145" width="12" height="10"/><text x="100" y="128" class="svg-lbl">USB flash drive</text></g>
               <g class="sk" data-k="ext" data-n="2"><path class="wire" d="M200 175C150 205 120 210 95 220"/><rect class="dv-body" x="20" y="205" width="90" height="50" rx="8"/><circle class="dv-detail" cx="96" cy="245" r="3"/><text x="65" y="198" class="svg-lbl">Hard disk drive (USB)</text></g>
               <g class="sk" data-k="ext" data-n="3"><path class="wire" d="M285 178V205"/><rect class="dv-body" x="215" y="205" width="140" height="22" rx="5"/><ellipse class="sto-disc" cx="285" cy="240" rx="40" ry="12"/><text x="285" y="268" class="svg-lbl">Blu-ray drive</text></g>
               <g class="sk" data-k="ext" data-n="4"><rect class="dv-body" x="455" y="20" width="80" height="100" rx="6"/><path class="dv-detail" d="M466 40h58v6h-58zM466 54h58v6h-58zM466 68h58v6h-58zM466 82h58v6h-58z"/><text x="495" y="138" class="svg-lbl">NAS</text><text x="495" y="152" class="svg-sm">network-attached storage</text></g>
-              <g class="sk" data-k="ext" data-n="4"><path class="wire" d="M495 158V190"/><rect class="dv-body" x="455" y="190" width="80" height="26" rx="8"/><circle class="dv-led" cx="470" cy="203" r="2.5"/><text x="495" y="234" class="svg-sm">router</text><path class="wave" d="M445 200C425 190 410 175 395 150"/><text x="420" y="196" class="svg-sm">Wi-Fi</text><text x="501" y="178" class="svg-sm" style="text-anchor:start">Ethernet</text></g>
+              <g class="sk" data-k="ext" data-n="4"><path class="wire" d="M495 158V190"/><rect class="dv-body" x="455" y="190" width="80" height="26" rx="8"/><circle class="dv-led" cx="470" cy="203" r="2.5"/><text x="495" y="234" class="svg-sm">router</text><path class="wave" d="M445 200C425 190 410 175 395 150"/><text x="410" y="208" class="svg-sm">Wi-Fi</text><text x="501" y="178" class="svg-sm" style="text-anchor:start">Ethernet</text></g>
             </svg>
           </div>
           <p class="verdict" id="kMsg"></p>
