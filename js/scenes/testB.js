@@ -1,0 +1,28 @@
+FD.test({
+  id: 'testB',
+  part: 'B',
+  Q: [
+    ['memory', 'Which can be accessed faster?', ['Memory (RAM)', 'Secondary storage', 'Magnetic tape', 'Optical media'], 'Memory stores instructions so the processor can fetch them quickly.', 'ram'],
+    ['RAM', 'Where does the processor fetch software instructions from?', ['Memory', 'The monitor', 'The keyboard', 'The internet'], 'Software is loaded into RAM from storage; the processor fetches it from memory.', 'ram'],
+    ['RAM', 'What happens to the data in RAM when the computer’s power is turned off?', ['It is lost', 'It is saved to ROM', 'It stays in RAM', 'It is printed'], 'RAM is volatile.', 'ram'],
+    ['RAM', 'What happens to performance when the processor has to use virtual memory?', ['It decreases a lot, because secondary storage is much slower than RAM', 'It increases', 'It stays the same', 'The computer switches off'], 'Closing programs frees RAM and improves performance.', 'ram'],
+    ['ROM', 'Which devices are single purpose computers that use ROM?', ['Calculators, digital watches and washing machines', 'Laptops and home PCs only', 'Servers', 'Routers and switches'], 'They store only one program.', 'rom'],
+    ['ROM', 'PROM can be written to…', ['only once', 'any number of times', 'never', 'only with UV light'], 'PROM = Programmable Read Only Memory.', 'rom'],
+    ['ROM', 'How is the data in EEPROM erased?', ['By applying a voltage to one of the pins on the chip', 'By exposing it to strong ultraviolet light', 'By turning the power off', 'It cannot be erased'], 'So you do not have to remove the chip.', 'rom'],
+    ['ROM', 'Which is true of ROM (Table 3.1)?', ['It is intended to store permanent data', 'It can swap instructions in and out', 'It can be upgraded', 'It is volatile'], 'RAM stores temporary data.', 'rom'],
+    ['flash', 'Why does flash memory have a fast access time and low power consumption?', ['It does not have any moving parts', 'It is volatile', 'It uses a laser', 'It spins at 7200 rpm'], 'Flash memory is a type of EEPROM.', 'flash'],
+    ['CPU', 'What is the processor cycle?', ['Fetching an instruction from memory, decoding it, then executing it', 'Turning the computer on and off', 'Spinning the platters once', 'Copying a file to storage'], 'Fetch → decode → execute.', 'cpu'],
+    ['CPU', 'Which <b>one</b> of these describes the term ‘clock cycle’?', ['The number of times per second that a processor can carry out instructions', 'The number of instructions that a processor can carry out each second', 'The number of times that a processor can load instructions for processing', 'The number of times that each process repeats in a processor'], 'Chapter question 7. Measured in Hz, kHz, MHz and GHz.', 'cpu'],
+    ['CPU', 'A processor runs at 3 GHz. How many clock cycles per second is this?', ['3,000,000,000', '3,000,000', '3000', '3'], '1 GHz = 1,000,000,000 Hz.', 'cpu'],
+    ['CPU', 'Why can each core in a multi-core processor run more slowly?', ['It saves energy and produces less heat', 'It makes the RAM bigger', 'It stops viruses', 'It makes the screen brighter'], 'Less cooling is needed: quieter, greener, longer battery life.', 'cpu'],
+  ],
+  LONG: [
+    { q: 'State what is meant by ‘ROM’.', m: 1, s: ['Read Only Memory: memory that stores data permanently / is non-volatile / cannot be changed after manufacture (1).'], link: ['rom', 'See ROM again'] },
+    { q: 'State what is meant by ‘RAM’.', m: 1, s: ['Random Access Memory: volatile memory that holds the programs/instructions in use (1).'], link: ['ram', 'See RAM again'] },
+    { q: 'Explain why increasing the amount of RAM in a system improves the user experience.', m: 3, s: ['More programs/files can be held in RAM at the same time (1).', 'Less virtual memory is needed (1)…', '…which is on slower secondary storage, so programs run faster / the system does not slow down (1).', 'Updated programs with more complex features have the memory they need (1).', 'Max 3.'], link: ['ram', 'See virtual memory again'] },
+    { q: 'Describe what virtual memory is and why it is used.', m: 2, s: ['An area of secondary storage used as if it were RAM (1).', 'It is used when there is not enough space in RAM for all the programs in use (1).'], link: ['ram', 'See virtual memory again'] },
+    { q: 'List <b>three</b> characteristics of RAM that make it different to ROM.', m: 3, s: ['Volatile / loses data when the power is off (1).', 'Can swap instructions in and out (1).', 'Stores temporary data (1).', 'Can be upgraded (1).', 'Max 3.'], link: ['rom', 'See Table 3.1 again'] },
+    { q: 'Explain <b>two</b> reasons why the characteristics of flash memory make it suitable for use as secondary storage in smartphones.', m: 4, s: ['Low power consumption (1) so the battery lasts longer (1).', 'No moving parts (1) so it is not damaged if the phone is dropped / fast access time (1).', 'Non-volatile (1) so apps and photos are kept when the phone is switched off (1).', 'Max 4: two characteristics, each with a linked reason.'], link: ['flash', 'See flash memory again'] },
+    { q: 'Processor A is a single-core processor at 4 GHz. Processor B is a quad-core processor at 2 GHz. Explain why Processor B might do more work, and <b>one</b> other benefit of B.', m: 3, s: ['B has four cores working during each processor cycle (1).', 'So it can do up to four times as much work per cycle / 4 × 2 = 8 billion against 4 billion cycles of work per second (1).', 'Each core runs more slowly, so it uses less energy / produces less heat / is quieter / longer battery life (1).'], link: ['cpu', 'See cores again'] },
+  ],
+});

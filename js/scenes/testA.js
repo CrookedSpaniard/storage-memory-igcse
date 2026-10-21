@@ -1,0 +1,28 @@
+FD.test({
+  id: 'testA',
+  part: 'A',
+  Q: [
+    ['storage', 'Secondary storage is non-volatile. This means…', ['it does not lose data when the power is turned off', 'it loses data when the power is turned off', 'it can only be written once', 'it is faster than RAM'], 'RAM is volatile.', 'storage'],
+    ['storage', 'Which is <b>not</b> a use of secondary storage?', ['Executing software instructions', 'Storing a document for future use', 'Storing an application ready to be loaded into RAM', 'Virtual memory'], 'The processor executes instructions.', 'storage'],
+    ['storage', 'How do internal drives connect to the computer?', ['Directly to the motherboard', 'Through Wi-Fi only', 'Through a router', 'Through a USB port on the outside'], 'External devices use the ports and adapters on the outside.', 'storage'],
+    ['storage', 'Which statement about devices and media is correct?', ['A DVD disk is the media; a DVD drive reads the data on it', 'A DVD drive is the media; a DVD disk reads it', 'A USB drive is the media; flash memory is the device', 'Devices and media mean the same thing'], 'A storage device contains the media and accesses the data stored on it.', 'storage'],
+    ['hdd', 'What moves the read/write head across the tracks of a hard disk?', ['An arm', 'The spindle', 'A laser', 'A motor in the platter'], 'The platters spin on the spindle; the head moves on an arm.', 'hdd'],
+    ['hdd', 'The average seek time of a hard disk is…', ['4–15 milliseconds', '4–15 seconds', '5400–7200 milliseconds', '4–15 minutes'], 'Typical spin speeds are 5400 or 7200 rpm.', 'hdd'],
+    ['hdd', 'When writing, the read/write head…', ['transforms electrical current into a magnetic field', 'changes the magnetic field into electrical current', 'burns bumps into the surface', 'charges tiny cells'], 'When reading it does the opposite.', 'hdd'],
+    ['media', 'Which uses a violet laser?', ['Blu-ray', 'DVD', 'CD', 'Magnetic tape'], 'Blu-ray disks get their name from the colour of the laser.', 'media'],
+    ['media', 'How much can a single-sided, single-layer DVD store?', ['4.7 GB', '700 MB', '25 GB', '50 GB'], 'Double-sided, dual-layer DVDs can store as much as 18 GB.', 'media'],
+    ['media', 'Which disk can be written, erased and rewritten?', ['DVD-RW', 'DVD-R', 'CD-R', 'BD-R'], 'R = recordable; RW and RE = rewritable.', 'media'],
+    ['media', 'How do optical media represent 0 and 1?', ['Tiny bumps on the disk’s surface', 'Positive or negative magnetic charge', 'Levels of electrical charge in cells', 'Different colours of ink'], 'Hard disks and tape use magnetic charge; flash uses electrical charge.', 'media'],
+    ['compare', 'Which media has the slowest data access speed?', ['Magnetic tape', 'Flash media', 'Hard disk', 'Optical media'], 'Table 1.4.', 'compare'],
+    ['compare', 'Which media is suitable for portable use?', ['Flash media', 'Hard disk', 'Optical media', 'Magnetic tape'], 'Table 1.4: only flash media is “Yes” for portability.', 'compare'],
+    ['compare', 'How many bits are there in a byte?', ['8', '4', '16', '1000'], 'A bit is a single 0 or 1.', 'compare'],
+    ['compare', 'Which is the largest?', ['1 TB', '1 GB', '1 MB', '1 KB'], 'KB → MB → GB → TB.', 'compare'],
+  ],
+  LONG: [
+    { q: 'Explain <b>one</b> reason why Blu-ray disks are used to store modern console games.', m: 2, s: ['They have a large capacity: 25 GB single-sided / 50 GB double-sided (1)…', '…so they can store large, high-quality games / modern games need a lot of storage (1).', 'OR: scratch-protection coating (1) so the game disk is not easily damaged (1).'], link: ['media', 'See optical media again'] },
+    { q: 'Describe how a hard disk drive finds and reads data.', m: 4, s: ['The platters spin on a spindle (at e.g. 5400/7200 rpm) (1).', 'The read/write head moves on an arm across the tracks (1)…', '…to the track where the data is stored (seek time) (1).', 'It waits for the data to spin round under the head (1).', 'The head changes the magnetic field into electrical current (1).', 'Max 4.'], link: ['hdd', 'See the hard disk again'] },
+    { q: 'Explain the difference between a storage <b>device</b> and storage <b>media</b>. Give an example.', m: 3, s: ['The media is what stores the data (1).', 'The device contains the media and accesses/reads the data stored on it (1).', 'Example: a DVD disk is the media and a DVD drive is the device / flash memory is the media and a USB drive is the device (1).'], link: ['storage', 'See devices and media again'] },
+    { q: 'A company wants to back up all of its servers every night and keep the backups for many years. Explain why magnetic tape is suitable.', m: 3, s: ['Very large capacity, up to 185 TB (1).', 'Lowest cost per GB (1).', 'It is used for whole system backups and archives (1).', 'Its slow access speed does not matter because the backups are rarely read (1).', 'Max 3.'], link: ['compare', 'See Table 1.4 again'] },
+    { q: 'Explain why flash media are suitable for portable devices.', m: 2, s: ['They have no moving parts (1)…', '…so they are more energy-efficient / use less battery (1)…', '…and less likely to fail when they are moved around or dropped (1).', 'Max 2.'], link: ['media', 'See flash media again'] },
+  ],
+});
